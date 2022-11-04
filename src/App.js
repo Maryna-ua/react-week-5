@@ -5,11 +5,19 @@ export default function App() {
     <div>
       <h1>WEATHER APP</h1>
       This project was coded by{" "}
-      <a href="https://www.linkedin.com/in/kodola-maryna/" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/kodola-maryna/"
+        rel="noreferrer"
+        target="_blank"
+      >
         Maryna Kodola
       </a>{" "}
       and is
-      <a href="" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/kodola-maryna/"
+        rel="noreferrer"
+        target="_blank"
+      >
         {" "}
         open-sourced on GitHub
       </a>
