@@ -14,7 +14,7 @@ export default function App() {
       </a>{" "}
       and is
       <a
-        href="https://www.linkedin.com/in/kodola-maryna/"
+        href="https://github.com/Maryna-ua/react-week-5"
         rel="noreferrer"
         target="_blank"
       >
