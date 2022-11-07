@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./Weather.css";
 
-export default function Weather() {
+export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
 
   function handleResponse(response) {
@@ -41,29 +41,7 @@ export default function Weather() {
             </div>
           </div>
         </form>
-        <h1>{weather.city}</h1>
-        <ul>
-          <li>
-            <FormattedDate date={weather.date} />
-          </li>
-          <li className="text-capitalize">{weather.description}</li>
-        </ul>
-        <div className="row">
-          <div className="col">
-            <img src={weather.icon} alt="weather icon" />{" "}
-            <span className="temperature">
-              {Math.round(weather.temperature)}
-            </span>
-            <span className="unit">°C</span>
-          </div>
-
-          <div className="col">
-            <ul>
-              <li>Humidity: {weather.humidity}%</li>
-              <li>Wind: {Math.round(weather.wind)} km/h</li>
-            </ul>
-          </div>
-        </div>
+        <WeatherInfo data={weather} />
       </div>
     );
   } else {
