@@ -1,6 +1,5 @@
 .Weather {
   padding: 16px;
-
   color: #39394d;
   font-family: arial, sans-serif;
   border: 1px solid #39394d;
@@ -22,10 +21,9 @@
   font-weight: 100;
   line-height: 18px;
 }
-.Weather canvas {
-  margin-right: 15px;
-}
+
 .Weather .temperature {
+  margin-left: 15px;
   color: black;
   font-size: 64px;
   font-weight: 400;
